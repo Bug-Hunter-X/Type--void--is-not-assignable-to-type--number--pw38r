@@ -1,0 +1,3 @@
+# Type 'void' is not assignable to type 'number'
+
+This TypeScript code demonstrates a common error that arises when a function's return type is declared as `void` but the function prematurely exits using a `return` statement within a conditional block. In this scenario, even though the function doesn't explicitly return a value in all cases, TypeScript interprets this as an implicit return of `undefined`, which is not assignable to a numeric type.
